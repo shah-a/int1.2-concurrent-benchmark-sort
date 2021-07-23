@@ -1,3 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin-bottom: 3em;
+}
+
+main {
+  margin-bottom: 3em;
+  /* width: 80%; */
+  display: flex;
+}
+
+section {
+  margin: 0 1em;
+  width: 100%;
+  border: solid 1px;
 }
