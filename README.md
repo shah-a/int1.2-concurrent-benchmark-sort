@@ -1,5 +1,9 @@
 # INT 1.2: Concurrent Sort Benchmark
 
+## Usage
+
+Follow the on-screen prompts in the app's `Configuration` section
+
 ## Acknowledgements
 
 Gopher pictures:
