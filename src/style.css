@@ -5,6 +5,7 @@
   --gray-200: #E4E4E7;
   --blue-400: #60A5FA;
   --blue-500: #3B82F6;
+  --blue-900: #1E3A8A;
 }
 
 html {
@@ -111,15 +112,31 @@ header {
   margin-bottom: 1em;
 }
 
-.config > .config-card {
+.config-card {
   border: solid 1px;
   border-radius: 0.25em;
   padding: 2em;
 }
 
-.config button {
+.algorithm-select {
+  font-family: inherit;
+  margin-left: 1em;
+  padding: 0.5em;
+  border: solid 1px var(--blue-500);
+  border-radius: 0.12em;
+}
+
+.config-card .link {
+  color: inherit;
+}
+
+.config-card .link:hover {
+  color: var(--blue-900);
+}
+
+.config-button {
+  font-family: inherit;
   padding: 0.5em 1.5em;
-  font-family: 'Roboto', sans-serif;
   font-size: inherit;
   font-weight: bold;
   background-color: var(--gray-50);
@@ -130,7 +147,7 @@ header {
   transition: all 0.1s;
 }
 
-.config button:hover {
+.config-button:hover {
   background-color: var(--gray-200);
 }
 
