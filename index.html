@@ -32,35 +32,35 @@
 
   <main class="main-content">
     <section class="arrays">
-      <div class="array-card">
+      <div id="array-1-card" class="array-card">
         <label for="array-1" class="array-label">
           <h2>Array #1</h2>
         </label>
         <textarea id="array-1" class="array-textarea" rows="7"
           placeholder="E.g: 39, 71, 37, 87, 69, 48, 49, 45, 85, 63, 23, 13, 26, 76, 56, 99, 17, 1, 81, 25, 18, 15, 20, 68, 31..."></textarea>
       </div>
-      <div class="array-card">
+      <div id="array-2-card" class="array-card">
         <label for="array-2" class="array-label">
           <h2>Array #2</h2>
         </label>
         <textarea id="array-2" class="array-textarea" rows="7"
           placeholder="E.g: 10, 62, 16, 94, 9, 46, 24, 91, 22, 3, 52, 35, 89, 12, 61, 30, 19, 28, 33, 77, 65, 93, 92, 7, 5..."></textarea>
       </div>
-      <div class="array-card">
+      <div id="array-3-card" class="array-card">
         <label for="array-3" class="array-label">
           <h2>Array #3</h2>
         </label>
         <textarea id="array-3" class="array-textarea" rows="7"
           placeholder="E.g: 29, 21, 79, 2, 47, 97, 41, 96, 86, 59, 57, 73, 70, 72, 43, 84, 75, 82, 78, 55, 80, 11, 6, 8, 44..."></textarea>
       </div>
-      <div class="array-card">
+      <div id="array-4-card" class="array-card">
         <label for="array-4" class="array-label">
           <h2>Array #4</h2>
         </label>
         <textarea id="array-4" class="array-textarea" rows="7"
           placeholder="E.g: 60, 64, 27, 36, 38, 90, 74, 14, 95, 50, 88, 83, 100, 53, 4, 51, 54, 66, 34, 67, 58, 98, 42, 32, 40..."></textarea>
       </div>
-      <div class="array-card">
+      <div id="array-5-card" class="array-card">
         <label for="array-5" class="array-label">
           <h2>Array #5</h2>
         </label>
@@ -81,7 +81,7 @@
       </div>
       <div class="config-card">
         <h3>Which Sorting Algorithms?</h3>
-        <div class="algorithm-card">
+        <div id="algorithm-1-card" class="algorithm-card">
           <label for="algorithm-1" class="algorithm-label">Array #1: </label>
           <select id="algorithm-1" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
@@ -89,7 +89,7 @@
             <option value="insertion">Insertion Sort</option>
           </select>
         </div>
-        <div class="algorithm-card">
+        <div id="algorithm-2-card" class="algorithm-card">
           <label for="algorithm-2" class="algorithm-label">Array #2: </label>
           <select id="algorithm-2" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
@@ -97,7 +97,7 @@
             <option value="insertion">Insertion Sort</option>
           </select>
         </div>
-        <div class="algorithm-card">
+        <div id="algorithm-3-card" class="algorithm-card">
           <label for="algorithm-3" class="algorithm-label">Array #3: </label>
           <select id="algorithm-3" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
@@ -105,7 +105,7 @@
             <option value="insertion">Insertion Sort</option>
           </select>
         </div>
-        <div class="algorithm-card">
+        <div id="algorithm-4-card" class="algorithm-card">
           <label for="algorithm-4" class="algorithm-label">Array #4: </label>
           <select id="algorithm-4" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
@@ -113,7 +113,7 @@
             <option value="insertion">Insertion Sort</option>
           </select>
         </div>
-        <div class="algorithm-card">
+        <div id="algorithm-5-card" class="algorithm-card">
           <label for="algorithm-5" class="algorithm-label">Array #5: </label>
           <select id="algorithm-5" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
@@ -124,16 +124,16 @@
       </div>
       <div class="config-card">
         <h3>How Many Numbers Per Array?</h3>
-        <small>(You can also enter <a target="_blank" href="https://www.random.org/integer-sets/">your own</a>
-          numbers)</small>
         <div class="array-length-card">
           <!-- <label for="array-length"></label> -->
           <input type="range" id="array-length" min="50" max="500" step="25" value="275">
         </div>
-        <button id="generate-button">Generate Inputs</button>
+        <button id="generate-button" class="config-button">Generate Inputs</button>
+        <p>(Or manually enter <a class="link" target="_blank" href="https://www.random.org/integer-sets/">your own</a>)
+        </p>
       </div>
       <div class="config-card">
-        <button id="start-button">Start</button>
+        <button id="start-button" class="config-button">Start</button>
       </div>
     </section>
   </main>
