@@ -72,15 +72,18 @@
       <div class="config-card">
         <h2>Configuration</h2>
       </div>
-      <!-- <div class="config-card">
+      <div class="config-card">
         <h3>How Many Arrays?</h3>
-        <p>Slider Goes Here</p>
-      </div> -->
+        <div class="array-count-card">
+          <!-- <label for="array-count"></label> -->
+          <input type="range" id="array-count" min="2" max="5" step="1" value="3">
+        </div>
+      </div>
       <div class="config-card">
         <h3>Which Sorting Algorithms?</h3>
         <div class="algorithm-card">
           <label for="algorithm-1" class="algorithm-label">Array #1: </label>
-          <select name="algorithm-1" id="algorithm-1" class="algorithm-select">
+          <select id="algorithm-1" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
@@ -88,7 +91,7 @@
         </div>
         <div class="algorithm-card">
           <label for="algorithm-2" class="algorithm-label">Array #2: </label>
-          <select name="algorithm-2" id="algorithm-2" class="algorithm-select">
+          <select id="algorithm-2" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
@@ -96,7 +99,7 @@
         </div>
         <div class="algorithm-card">
           <label for="algorithm-3" class="algorithm-label">Array #3: </label>
-          <select name="algorithm-3" id="algorithm-3" class="algorithm-select">
+          <select id="algorithm-3" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
@@ -104,7 +107,7 @@
         </div>
         <div class="algorithm-card">
           <label for="algorithm-4" class="algorithm-label">Array #4: </label>
-          <select name="algorithm-4" id="algorithm-4" class="algorithm-select">
+          <select id="algorithm-4" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
@@ -112,7 +115,7 @@
         </div>
         <div class="algorithm-card">
           <label for="algorithm-5" class="algorithm-label">Array #5: </label>
-          <select name="algorithm-5" id="algorithm-5" class="algorithm-select">
+          <select id="algorithm-5" class="algorithm-select">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
@@ -123,7 +126,10 @@
         <h3>How Many Numbers Per Array?</h3>
         <small>(You can also enter <a target="_blank" href="https://www.random.org/integer-sets/">your own</a>
           numbers)</small>
-        <p>Slider Goes Here</p>
+        <div class="array-length-card">
+          <!-- <label for="array-length"></label> -->
+          <input type="range" id="array-length" min="50" max="500" step="25" value="275">
+        </div>
         <button id="generate-button">Generate Inputs</button>
       </div>
       <div class="config-card">
