@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #CFFAFE; /* TailwindCSS palette: cyan-100 */
+  color: #334155; /* TailwindCSS palette: blue-gray-700 */
 }
 
 header {
