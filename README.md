@@ -1,4 +1,4 @@
-# INT 1.2: Concurrent Sort Benchmark
+# INT 1.2: Goroutine Sort Benchmark
 
 <img src="src/img/smart-gophers.png" alt="smart-gophers.png" width="500">
 
