@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- TITLE -->
-  <title>INT 1.2</title>
+  <title>INT 1.2: Goroutine Sort Benchmark</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -75,7 +75,7 @@
       <div class="config-card">
         <h3>How Many Arrays?</h3>
         <div class="array-count-card">
-          <!-- <label for="array-count"></label> -->
+          <label for="array-count" id="array-count-label">3</label>
           <input type="range" id="array-count" min="2" max="5" step="1" value="3">
         </div>
       </div>
@@ -125,7 +125,7 @@
       <div class="config-card">
         <h3>How Many Numbers Per Array?</h3>
         <div class="array-length-card">
-          <!-- <label for="array-length"></label> -->
+          <label for="array-length" id="array-length-label">275</label>
           <input type="range" id="array-length" min="50" max="500" step="25" value="275">
         </div>
         <button id="generate-button" class="config-button">Generate Inputs</button>
