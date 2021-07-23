@@ -30,7 +30,14 @@ body {
 }
 
 header {
+  background-color: var(--gray-50);
+  color: var(--blue-500);
   margin-bottom: 3em;
+  width: 100%;
+}
+
+.header-content {
+  margin: 0 auto;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -43,7 +50,7 @@ header {
 }
 
 .github:hover {
-  color: inherit;
+  color: var(--blue-400);
   animation-name: wiggle;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
@@ -58,7 +65,7 @@ header {
   100% {transform: rotate(0deg);}
 }
 
-.content {
+.main-content {
   margin-bottom: 3em;
   width: 80%;
   display: flex;
@@ -81,6 +88,6 @@ footer {
   margin-top: auto;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
 }
