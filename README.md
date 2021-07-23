@@ -1,5 +1,7 @@
 # INT 1.2: Concurrent Sort Benchmark
 
+<img src="src/img/smart-gophers.png" alt="smart-gophers.png" width="500">
+
 ## Description
 
 This project is the **frontend (only)** of a Golang benchmarking app. The intended function is to demonstrate how concurrency (Goroutines) can save processing time. This is shown by sorting a set of arrays (once synchronously and once concurrently and then comparing how long each operation took.
