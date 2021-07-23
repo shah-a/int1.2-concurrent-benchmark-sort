@@ -1,3 +1,12 @@
+:root {
+  /* From TailwindCSS palette */
+  /* https://tailwindcss.com/docs/customizing-colors#color-palette-reference */
+  --gray-50: #FAFAFA;
+  --gray-200: #E4E4E7;
+  --blue-400: #60A5FA;
+  --blue-500: #3B82F6;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -16,22 +25,46 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #CFFAFE; /* TailwindCSS palette: cyan-100 */
-  color: #334155; /* TailwindCSS palette: blue-gray-700 */
+  background-color: var(--blue-500);
+  color: var(--gray-50);
 }
 
 header {
   margin-bottom: 3em;
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-main {
+.github {
+  color: inherit;
+  transition: color 0.1s;
+}
+
+.github:hover {
+  color: inherit;
+  animation-name: wiggle;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.content {
   margin-bottom: 3em;
   width: 80%;
   display: flex;
 }
 
-section {
+.arrays, .config {
   width: 100%;
   border: solid 1px;
 }
