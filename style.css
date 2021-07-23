@@ -70,9 +70,33 @@ header {
   display: flex;
 }
 
-.arrays, .config {
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  margin: 0;
+}
+
+.arrays {
+  margin-bottom: auto;
   width: 100%;
+  padding: 2em;
   border: solid 1px;
+  border-radius: 0.25em;
+}
+
+.config {
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.config :not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.config > .config-card {
+  border: solid 1px;
+  border-radius: 0.25em;
+  padding: 2em;
 }
 
 .arrays {
@@ -81,6 +105,21 @@ header {
 
 .config {
   margin-left: 1em;
+}
+
+.arrays :not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.array-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.array-textarea {
+  padding: 0.5em;
+  width: 100%;
 }
 
 footer {
