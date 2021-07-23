@@ -15,22 +15,37 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
-nav {
+header {
   margin-bottom: 3em;
+  width: 80%;
 }
 
 main {
   margin-bottom: 3em;
-  /* width: 80%; */
+  width: 80%;
   display: flex;
 }
 
 section {
-  margin: 0 1em;
   width: 100%;
   border: solid 1px;
+}
+
+.arrays {
+  margin-right: 1em;
+}
+
+.config {
+  margin-left: 1em;
+}
+
+footer {
+  margin-top: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
