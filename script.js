@@ -5,21 +5,39 @@ const arrayLengthInput = document.querySelector('#array-length');
 const arrayLengthLabel = document.querySelector('#array-length-label');
 
 const generateNumbersButton = document.querySelector('#generate-button');
+const clearNumbersButton = document.querySelector('#clear-button');
 
 const startButton = document.querySelector('#start-button');
 
 const updateLengthLabel = (e) => {
   arrayLengthLabel.innerHTML = arrayLengthInput.value;
-  console.log(arrayLengthInput.value); // value is ready to send to backend API
 };
 
 const updateCountLabel = (e) => {
   arrayCountLabel.innerHTML = arrayCountInput.value;
-  console.log(arrayCountInput.value); // value is ready to send to backend API
 };
 
-const generateInputs = (e) => {
-  console.log("I was clicked!");
+const generateNumbers = (e) => {
+  /*
+   * API call to random.org can go here for good random numbers
+   */
+
+  let arrayTextfield;
+
+  for (let i = 0; i < parseInt(arrayCountInput.value); i++) {
+    arrayTextfield = document.querySelector(`#array-${i + 1}`);
+    arrayTextfield.textContent = '';
+    for (let j = 0; j < parseInt(arrayLengthInput.value); j++) {
+      arrayTextfield.textContent += `${(Math.floor(Math.random() * 500))}, `;
+    }
+  }
+};
+
+const clearNumbers = (e) => {
+  const arrays = document.querySelectorAll('.array-textarea');
+  arrays.forEach((array) => {
+    array.textContent = '';
+  });
 };
 
 const startSorting = (e) => {
@@ -45,8 +63,9 @@ arrayCountInput.addEventListener('change', updateCountLabel);
 arrayLengthInput.addEventListener('mousemove', updateLengthLabel);
 arrayCountInput.addEventListener('mousemove', updateCountLabel);
 
-// GENERATE RANDOM NUMBERS
-generateNumbersButton.addEventListener('click', generateInputs);
+// GENERATE/CLEAR RANDOM NUMBERS
+generateNumbersButton.addEventListener('click', generateNumbers);
+clearNumbersButton.addEventListener('click', clearNumbers);
 
 // START SORTING OPERATION
 startButton.addEventListener('click', startSorting);
