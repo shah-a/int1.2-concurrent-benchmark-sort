@@ -23,20 +23,23 @@ const generateNumbers = (e) => {
    */
 
   let arrayTextfield;
+  const loopControl = parseInt(arrayCountInput.value);
 
-  for (let i = 0; i < parseInt(arrayCountInput.value); i++) {
+  for (let i = 0; i < loopControl; i++) {
     arrayTextfield = document.querySelector(`#array-${i + 1}`);
-    arrayTextfield.textContent = '';
+    let myStr = '';
+    arrayTextfield.value = '';
     for (let j = 0; j < parseInt(arrayLengthInput.value); j++) {
-      arrayTextfield.textContent += `${(Math.floor(Math.random() * 500))}, `;
+      myStr += `${(Math.floor(Math.random() * 500))}, `;
     }
+    arrayTextfield.value = myStr;
   }
 };
 
 const clearNumbers = (e) => {
   const arrays = document.querySelectorAll('.array-textarea');
   arrays.forEach((array) => {
-    array.textContent = '';
+    array.value = '';
   });
 };
 
