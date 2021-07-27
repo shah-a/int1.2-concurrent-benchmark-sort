@@ -20,19 +20,38 @@ const updateCountLabel = (e) => {
 const generateNumbers = (e) => {
   /*
    * API call to random.org can go here for good random numbers
+   *
+   * Example (base: https://api.random.org/json-rpc/4/invoke)
+   *
+   * {
+   *     "jsonrpc": "2.0",
+   *     "method": "generateIntegerSequences",
+   *     "params": {
+   *         "apiKey": "process.env.RANDOM_API",
+   *         "n": "5",
+   *         "length": "5",
+   *         "min": "0",
+   *         "max": "500"
+   *     },
+   *     "id": 0
+   * }
+   * 
    */
 
   let arrayTextfield;
-  const loopControl = parseInt(arrayCountInput.value);
+  const arrayCount = parseInt(arrayCountInput.value);
 
-  for (let i = 0; i < loopControl; i++) {
-    arrayTextfield = document.querySelector(`#array-${i + 1}`);
-    let myStr = '';
+  for (let i = 1; i <= arrayCount; i++) {
+    arrayTextfield = document.querySelector(`#array-${i}`);
     arrayTextfield.value = '';
-    for (let j = 0; j < parseInt(arrayLengthInput.value); j++) {
-      myStr += `${(Math.floor(Math.random() * 500))}, `;
+
+    const arrayLength = parseInt(arrayLengthInput.value);
+    let arrayNumbers = '';
+    for (let j = 0; j < arrayLength - 1; j++) {
+      arrayNumbers += `${(Math.floor(Math.random() * 500))}, `;
     }
-    arrayTextfield.value = myStr;
+    arrayNumbers += Math.floor(Math.random() * 500);
+    arrayTextfield.value = arrayNumbers;
   }
 };
 
