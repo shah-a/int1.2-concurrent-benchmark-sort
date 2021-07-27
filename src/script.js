@@ -66,7 +66,7 @@ const startSorting = (e) => {
   const algorithmSelects = document.querySelectorAll('.algorithm-select');
 
   algorithmSelects.forEach((algorithm, i) => {
-    console.log(`Algorithm ${i}: ${algorithm.value}`);
+    console.log(`${i + 1}: ${algorithm.value}`);
   });
 
   /*
