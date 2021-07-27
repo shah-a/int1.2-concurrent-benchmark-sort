@@ -108,7 +108,7 @@ header {
   width: 100%;
 }
 
-.config :not(:last-child) {
+.config > :not(:last-child) {
   margin-bottom: 1em;
 }
 
@@ -116,6 +116,25 @@ header {
   border: solid 1px;
   border-radius: 0.25em;
   padding: 2em;
+}
+
+.config-card > :not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-label {
+  margin: 0.25em 0;
+  font-size: 3em;
+}
+
+input[type="range"] {
+  width: 75%;
 }
 
 .algorithm-select {
